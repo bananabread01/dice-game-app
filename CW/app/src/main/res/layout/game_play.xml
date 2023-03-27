@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View style="@style/horizontalLine"/>
+
+        <LinearLayout style="@style/row">
+
+            <TextView
+                android:id="@+id/win_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:textColor="@color/black"
+                android:background="#BEE8ED"
+                android:textSize="23sp"
+                android:text="Wins\nH: /C:" />
+
+            <View style="@style/verticalLine"/>
+
+            <TextView
+                android:id="@+id/round_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:paddingStart="10dp"
+                android:textColor="@color/black"
+                android:background="#BEE8ED"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                android:text="Round 1"/>
+
+            <View style="@style/verticalLine"/>
+
+            <TextView
+                android:id="@+id/score_tv"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:paddingStart="15dp"
+                android:textColor="@color/black"
+                android:background="#BEE8ED"
+                android:textSize="23sp"
+                android:text="Score\nH: /C:"/>
+
+        </LinearLayout>
+
+        <View style="@style/horizontalLine"/>
+
+        <LinearLayout style="@style/row">
+
+            <ImageButton
+                android:id="@+id/c1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/die"
+                android:scaleType="fitCenter"
+                android:contentDescription="computer dice 1"/>
+
+            <View style="@style/verticalLine"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="#BEE8ED"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="Comp (C)" />
+
+
+            <View style="@style/verticalLine"/>
+
+            <ImageButton
+                android:id="@+id/c2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/die"
+                android:scaleType="fitCenter"
+                android:contentDescription="computer dice 2"/>
+
+
+        </LinearLayout>
+
+        <View style="@style/horizontalLine"/>
+
+        <LinearLayout style="@style/row">
+
+            <ImageButton
+                android:id="@+id/c3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/die"
+                android:scaleType="fitCenter"
+                android:contentDescription="computer dice 3"/>
+
+            <View
+                style="@style/verticalLine"/>
+
+            <ImageButton
+                android:id="@+id/c4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/die"
+                android:scaleType="fitCenter"
+                android:contentDescription="computer dice 4"/>
+
+            <View
+                style="@style/verticalLine"/>
+
+            <ImageButton
+                android:id="@+id/c5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/die"
+                android:scaleType="fitCenter"
+                android:contentDescription="computer dice 5"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <LinearLayout
+            style="@style/row">
+
+
+            <Button
+                android:id="@+id/throwBtn"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_margin="25dp"
+                android:textSize="15sp"
+                android:text="throw"/>
+
+
+            <Button
+                android:id="@+id/scoreBtn"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_margin="25dp"
+                android:textSize="15sp"
+                android:text= "score"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <LinearLayout
+            style="@style/row">
+
+            <ImageButton
+                android:id="@+id/m1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/die"
+                android:scaleType="fitCenter"
+                android:contentDescription="human dice 1"/>
+
+            <View
+                style="@style/verticalLine"/>
+
+            <ImageButton
+                android:id="@+id/m2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/die"
+                android:scaleType="fitCenter"
+                android:contentDescription="human dice 2"/>
+
+            <View
+                style="@style/verticalLine"/>
+
+            <ImageButton
+                android:id="@+id/m3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/die"
+                android:scaleType="fitCenter"
+                android:contentDescription="human dice 3"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+        <LinearLayout
+            style="@style/row">
+
+            <ImageButton
+                android:id="@+id/m4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/die"
+                android:scaleType="fitCenter"
+                android:contentDescription="human dice 4"/>
+
+            <View
+                style="@style/verticalLine"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:background="#BEE8ED"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:text="You (H)"/>
+
+            <View
+                style="@style/verticalLine"/>
+
+            <ImageButton
+                android:id="@+id/m5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/die"
+                android:scaleType="fitCenter"
+                android:contentDescription="human dice 5"/>
+
+        </LinearLayout>
+
+        <View
+            style="@style/horizontalLine"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
